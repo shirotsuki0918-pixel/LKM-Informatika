@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | ShiroPuks Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/features.html">Features</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <li><button class="login-btn" onclick="openLogin()">Login</button></li>
+    </nav>
+
+    <section class="page-hero">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We are ready to collaborate with you.</p>
+    </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="container contact-wrapper">
+
+            <!-- LEFT SIDE - CONTACT FORM -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+
+                <form>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Write your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- RIGHT SIDE - CONTACT INFO -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> support@shiropuks.com</p>
+                <p><strong>Phone:</strong> +62 812 3456 7890</p>
+                <p><strong>Location:</strong> Indonesia</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+        <h2>Login to ShiroPuks</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button class="btn-primary">Login</button>
+
+        <div class="divider">or</div>
+        <p>Belum punya akun? <a href="#" onclick="openRegister()">Register</a></p>
+    </div>
+    <div id="registerModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeRegister()">&times;</span>
+
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPassword" placeholder="Password">
+
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</div>
+</div>
+</body>
+</html>

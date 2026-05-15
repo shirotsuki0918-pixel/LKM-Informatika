@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Features | ShiroPuks Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/features.html">Features</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <li><button class="login-btn" onclick="openLogin()">Login</button></li>
+    </nav>
+
+    <!-- Page-Hero Section -->
+    <section class="page-hero">
+    <div class="container">
+        <h1>Our Features</h1>
+        <p>Discover what makes ShiroPuks Website powerful and modern.</p>
+    </div>
+</section>
+
+<!-- Features -->
+    <section class="features-page">
+        <div class="container">
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <h3>Fast Performance</h3>
+                    <p>Optimized with modern Node.js architecture.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>Works perfectly on desktop and mobile devices.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Secure System</h3>
+                    <p>Built with secure backend and best practices.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Scalable</h3>
+                    <p>Ready to grow with your business needs.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+        <h2>Login to Website</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button class="btn-primary">Login</button>
+
+        <div class="divider">or</div>
+        <p>Belum punya akun? <a href="#" onclick="openRegister()">Register</a></p>
+    </div>
+    <div id="registerModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeRegister()">&times;</span>
+
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPassword" placeholder="Password">
+
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>
